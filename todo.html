@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+
+        }
+
+        .section-outer {
+            width: 100%;
+            height: 300px;
+            background: lightblue;
+            display: flex;
+            justify-content: center;
+        }
+
+        .section-inner {
+            width: 300px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            justify-items: center;
+            border: 1px solid black;
+            border-radius: 15px;
+        }
+
+        #toDoList > div, #done > div {
+            display: flex;
+            justify-content: space-around;
+        }
+
+    </style>
+</head>
+<body>
+
+<div id="container" class="section-outer">
+    <div class="section-inner">
+        <div id="toDoList">
+            <h3>Tasks</h3>
+        </div>
+        <div id="done">
+            <h3>Done</h3>
+        </div>
+
+
+    </div>
+</div>
+
+<div id="action" class="section-outer">
+    <div class="section-inner">
+
+        <div class="styledFormElements text">
+            <input class="textInput" type="text">
+            <label class="labelTypeText">Type your task</label>
+        </div>
+        <button class="addTaskBtn" id="addTaskBtn">ADD</button>
+    </div>
+</div>
+
+
+<script src="src/todo_class.js"></script>
+</body>
+</html>
